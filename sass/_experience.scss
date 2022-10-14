@@ -1,0 +1,19 @@
+.experience{
+    &-left{
+        margin: $margin auto;
+    }
+    display: flex;
+    flex-wrap: nowrap;
+    &__heading{
+        margin: 0 ;
+        margin-left: 5rem;
+        margin-top: 5rem;
+        text-transform: uppercase;
+
+    }
+    &__paragraph{
+        padding: 2rem;
+        margin-left: 5rem;
+        margin-right: 7rem;
+    }
+}

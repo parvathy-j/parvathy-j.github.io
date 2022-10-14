@@ -1,0 +1,107 @@
+.header{
+background-color: #120c0c08;
+display: flex;
+ justify-content: space-between;
+ align-items: center;
+height: 9rem;
+width: 100%;
+ padding: 0 6rem;
+ z-index: 100;
+
+&__logo-icon{
+width:10rem;
+height:10rem;
+margin-bottom: 0;
+
+}
+}
+
+.user-nav{
+    
+    
+&__nav-link ,&__nav-link:visited{
+    font-size: 1.7rem;
+    font-weight: 400;
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    transition: all 0.3s;
+    padding: 2rem;
+
+    
+}
+&__nav-links{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    
+   
+}
+.nav-item{
+    margin-left: 4rem;
+}
+
+}
+.sticky {
+    position: fixed;
+    
+    background-color: $color-primary;
+    
+  }
+.container{
+    
+    height: 100vh;
+    margin-top: 0;
+    background-image: linear-gradient(to right bottom,
+    rgba($color-primary, 0.817),rgba($color-secondary, 0.804)),
+    url(/img/parvathy_big.jpg);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    z-index: 100;
+    
+    
+.list-inline{
+        list-style: none;
+        padding-left: 0;
+        display: flex;
+        margin-left: -5px;
+
+        
+    }
+.head{
+    padding-bottom: 20px;
+    margin-bottom: 35px;
+    position: absolute;
+    margin-left: 8rem;
+    margin-top: 4rem;
+    
+    &__icon{
+        cursor: pointer;;
+     width: 40px;
+    height: 40px;
+    font-size: 16px;
+    fill:$font-colour  ;
+    
+    padding: 11px;
+    }
+    &__name{
+        border-bottom: 1px solid rgba(255,255,255,.4);
+    }
+    &__icon:hover{
+    transition: all .3s;
+    background-color: #fff;
+    fill: $color-primary;
+    }
+    }
+
+    &__icon-link,&__icon-link:visited{
+        text-decoration: none;
+       
+    
+    }
+    
+}
+
+
+
