@@ -20,7 +20,11 @@ $color6: #26612c;
 
 $font-colour:rgba(234, 234, 234, 0.783);
 
-
+//Responsive breakpoints
+$bp-largest:75em; //1200px/16(default)
+$bp-large:61.8em; //990px
+$bp-medium:50em; //800px
+$bp-small:37.5em; //600px
 
 *,
 *::before,
@@ -31,6 +35,9 @@ $font-colour:rgba(234, 234, 234, 0.783);
 html {
     box-sizing: border-box;
     font-size: 62.5%; // 1rem = 10px, 10px/16px = 62.5%
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; 
 
     
 }
@@ -53,6 +60,9 @@ h1{
     font-size: 7rem;
     color:$font-colour;
     line-height: 1;
+    @media only screen and (max-width:$bp-large){
+        margin: 0;
+       }
     
 }
 p{

@@ -38,7 +38,7 @@ margin-bottom: 0;
    
 }
 .nav-item{
-    margin-left: 4rem;
+    margin-left: 2rem;
 }
 
 }
@@ -59,6 +59,9 @@ margin-bottom: 0;
     background-position: top;
     position: relative;
     z-index: 100;
+    @media only screen and (max-width:$bp-large){
+        height: 80vh;
+       }
     
     
 .list-inline{
@@ -70,20 +73,29 @@ margin-bottom: 0;
         
     }
 .head{
-    padding-bottom: 20px;
+    padding-bottom: 2rem;
     margin-bottom: 35px;
     position: absolute;
     margin-left: 8rem;
     margin-top: 4rem;
+    @media only screen and (max-width:$bp-large){
+        margin: 8rem ;
+        position: absolute;
+        top: 30%;
+        padding: 5rem;
+        float: left;
+        
+
+       }
     
     &__icon{
         cursor: pointer;;
      width: 40px;
     height: 40px;
     font-size: 16px;
-    fill:$font-colour  ;
-    
+    fill:rgba(255, 255, 255, 0.87);
     padding: 11px;
+    color:#fff;
     }
     &__name{
         border-bottom: 1px solid rgba(255,255,255,.4);

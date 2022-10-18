@@ -6,6 +6,9 @@
   margin: $margin auto;
   position: relative;
   padding: 3rem;
+  @media only screen and (max-width:$bp-large){
+    margin: 0;
+   }
   
 
   &__event {
@@ -16,7 +19,10 @@
     border-radius: $bdrs;
     align-self: center;
     width: 50vw;
-
+    @media only screen and (max-width:$bp-large){
+      width: 100%;
+     
+     }
     &:nth-child(2n + 1) {
       flex-direction: row-reverse;
       .timeline__event__date {
