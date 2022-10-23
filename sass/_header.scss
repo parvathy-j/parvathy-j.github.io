@@ -62,6 +62,9 @@ margin-bottom: 0;
     @media only screen and (max-width:$bp-large){
         height: 80vh;
        }
+       @media only screen and (max-width:$bp-medium){
+        height: 70vh;
+       }
     
     
 .list-inline{
@@ -87,20 +90,27 @@ margin-bottom: 0;
         
 
        }
+    @media only screen and (max-width:$bp-medium){
+        top: 20%;
+       }
+  
     
-    &__icon{
+    &__icon,a:visited{
         cursor: pointer;;
      width: 40px;
     height: 40px;
     font-size: 16px;
-    fill:rgba(255, 255, 255, 0.87);
+    fill:rgba(255, 255, 255, 0.87) !important;
     padding: 11px;
     color:#fff;
+    
     }
+    
+    
     &__name{
         border-bottom: 1px solid rgba(255,255,255,.4);
     }
-    &__icon:hover{
+    &__icon:hover,svg:hover{
     transition: all .3s;
     background-color: #fff;
     fill: $color-primary;

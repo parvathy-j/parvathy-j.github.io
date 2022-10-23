@@ -21,8 +21,12 @@
     width: 50vw;
     @media only screen and (max-width:$bp-large){
       width: 100%;
+
      
      }
+     @media only screen and (max-width:$bp-medium){
+      width: 50%;  
+    }
     &:nth-child(2n + 1) {
       flex-direction: row-reverse;
       .timeline__event__date {
@@ -33,6 +37,9 @@
       }
 
       .timeline__event__icon {
+        @media only screen and (max-width:$bp-medium){
+          padding: 0rem;
+        }
         &:before {
           content: "";
           width: 2px;
@@ -45,6 +52,7 @@
           z-index: -1;
           transform: translateX(-50%);
           animation: fillTop 2s forwards 4s ease-in-out;
+         
         }
         &:after {
           content: "";
@@ -58,6 +66,7 @@
           left: auto;
           transform: translateY(-50%);
           animation: fillLeft 2s forwards 4s ease-in-out;
+         
         }
       }
     }
@@ -154,6 +163,7 @@
 
       &:nth-child(2n + 1) {
         .timeline__event__icon {
+         
           &:before,
           &:after {
             background: $color3;
@@ -162,6 +172,9 @@
       }
 
       .timeline__event__icon {
+        @media only screen and (max-width:$bp-medium){
+          padding: 0rem;
+        }
         background: $color3;
         color: $color4;
         &:before,
