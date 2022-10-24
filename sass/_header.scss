@@ -1,4 +1,8 @@
 .header{
+  @media screen and (min-width: 0px) and (max-width:$bp-small) {
+    display: none; 
+  }
+  
 background-color: #120c0c08;
 display: flex;
  justify-content: space-between;
@@ -7,17 +11,22 @@ height: 9rem;
 width: 100%;
  padding: 0 6rem;
  z-index: 100;
+ 
 
 &__logo-icon{
 width:10rem;
 height:10rem;
+margin-top: 2rem;
 margin-bottom: 0;
+
 
 }
 }
 
 .user-nav{
-    
+    @media only screen and (max-width:$bp-small){
+        display: none;
+       }
     
 &__nav-link ,&__nav-link:visited{
     font-size: 1.7rem;
@@ -49,6 +58,9 @@ margin-bottom: 0;
     
   }
 .container{
+  @media screen and (min-width: 0px) and (max-width:$bp-small) {
+  position: unset;    
+  }
     
     height: 100vh;
     margin-top: 0;
@@ -93,6 +105,9 @@ margin-bottom: 0;
     @media only screen and (max-width:$bp-medium){
         top: 20%;
        }
+       @media only screen and (max-width:$bp-small){
+ 
+    }
   
     
     &__icon,a:visited{
@@ -124,6 +139,120 @@ margin-bottom: 0;
     }
     
 }
+
+
+
+/* Navicon Menu */
+.menu-button.navicon {
+
+    
+    color: rgba(255, 255, 255, 0);
+    position: absolute;
+    top: -1rem;
+    right: .25em;
+    z-index: 999;
+    background: none;
+    border: none;
+  
+    &:hover { cursor: default; }
+
+    &:after {
+        cursor: pointer;
+        color: rgb(250, 249, 249);
+        content: '\2630';
+        font-size: 2em;
+        width: 1em;
+        height: 1em;
+        line-height: 1em;
+        display: block;
+        position: fixed;
+
+    }
+
+    &.expanded:after {
+        content: '\2715';
+    }
+}
+
+.site-navigation  {
+  z-index: 999;
+
+  
+    // HIDE MENU-BUTTON BY DEFAULT
+    .menu-button { display: none; }
+  
+    text-decoration: none;
+    margin: .3em 0;
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 1em 1em 0 1em;
+      text-align: right;
+    }
+    li {
+      margin: 0;
+      padding: 0;
+      display: inline-block;
+    }
+    a {
+      display: block;
+      text-decoration: none;
+      padding: 1em;
+      color: #000;
+    }
+}
+
+.drawer-nav .site-navigation  {
+  height: 100%;
+  @media screen and (min-width: $bp-small) and (max-width:100000px) {
+    display: none; 
+  }
+  
+  .menu-button { display: block;}
+  
+  ul { 
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%; 
+    overflow: hidden;  
+    background: rgba($color-primary, 0.817);
+    color: #fff;
+    text-align: center;
+    li {
+      display: block;
+      margin: .3em 0;
+      &:first-child { margin-top: 5.5em; }
+    }
+    a {
+      background: rgba(21, 21, 21, 0.463);
+      color: #fff;
+      padding: auto;
+      &:hover {
+        background: rgba($color-primary, 0.817);
+      }
+    }
+  }
+  
+  // HIDE AND SHOW MENU
+  
+  .menu-button + ul { 
+
+    width: 0; 
+    padding: 0;
+    transition: all .2s ease; 
+  }
+  .menu-button.expanded + ul { 
+    width: 20em; 
+    padding: 0 .5em;
+  }
+  
+  .menu-button.navicon.expanded:after {
+    color: #fff;
+  } 
+  
+}
+
 
 
 

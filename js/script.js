@@ -75,3 +75,7 @@ const headerObserver = new IntersectionObserver(stickyNav, {
 });
 
 headerObserver.observe(container);
+var menubutton = document.querySelector(".menu-button");
+menubutton.onclick = function() {
+  this.classList.toggle("expanded");
+};

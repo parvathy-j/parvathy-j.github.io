@@ -19,6 +19,11 @@
     border-radius: $bdrs;
     align-self: center;
     width: 50vw;
+    @media only screen and (max-width:$bp-largest){
+      width: 89%;
+
+     
+     }
     @media only screen and (max-width:$bp-large){
       width: 100%;
 
