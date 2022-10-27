@@ -7,6 +7,10 @@
 .about{
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    @media only screen and (max-width:$bp-mobile){
+        display: block;
+
+    }
     grid-gap: 1rem;
     align-content: flex-start;
     padding: 3rem;

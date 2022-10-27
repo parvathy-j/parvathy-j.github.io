@@ -34,6 +34,10 @@
 
 
     }
+    @media only screen and (max-width:$bp-mobile){
+      grid-template-columns: repeat(2,min-content);
+
+}
   }
     &__card{
         display: flex;
