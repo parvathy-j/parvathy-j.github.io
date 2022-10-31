@@ -1,5 +1,25 @@
 
 const sectionAbout=document.querySelector('#about');
+const modalLogin = document.querySelector(".menu-button");
+const sitenavigation=document.querySelector(".drawer-nav")
+const body=document.querySelector("body");
+ 
+
+const closeModal = function (e) {
+  //  e.preventDefault(e);
+  modalLogin.classList.remove("expanded");
+};
+document.addEventListener('click', function (e) {
+  e.preventDefault(e);
+  if (!sitenavigation.contains(e.target)) {
+    closeModal();
+  }
+})
+document.addEventListener('keydown', function (e) {
+  if (e.key === 'Escape' ) {
+    closeModal();
+  }
+})
 ///////////////////////////////////////
 // Button scrolling
 // btnScrollTo.addEventListener('click', function (e) {

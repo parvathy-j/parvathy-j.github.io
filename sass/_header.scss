@@ -65,17 +65,17 @@ margin-bottom: 0;
     height: 100vh;
     background-image: linear-gradient(to right bottom,
     rgba($color-primary, 0.817),rgba($color-secondary, 0.804)),
-    url(/img/parvathy_big.jpg);
+    url(/img/example.jpg);
     background-size: cover;
     background-position: top;
     position: relative;
     z-index: 100;
-    // @media only screen and (max-width:$bp-large){
-    //     height: 80vh;
-    //    }
-    //    @media only screen and (max-width:$bp-medium){
-    //     height: 70vh;
-    //    }
+    @media only screen and (max-width:$bp-large){
+        height: 80vh;
+       }
+       @media only screen and (max-width:$bp-medium){
+        height: 75vh;
+       }
        
     
     
@@ -210,24 +210,28 @@ margin-bottom: 0;
     display: none; 
   }
   
-  .menu-button { display: block;}
+  .menu-button { display: block;
+    z-index: 10000;
+  }
   
   ul { 
     position: fixed;
+    overflow: hidden;
     top: 0;
     right: 0;
     height: 100%; 
     overflow: hidden;  
-    background: rgba($color-primary, 0.817);
+    background: $color-primary;
     color: #fff;
     text-align: center;
+    z-index: 999;
     li {
       display: block;
       margin: .3em 0;
       &:first-child { margin-top: 5.5em; }
     }
     a {
-      background: rgba(21, 21, 21, 0.463);
+      background: rgba(25, 25, 25, 0.74);
       color: #fff;
       padding: auto;
       &:hover {
@@ -239,7 +243,6 @@ margin-bottom: 0;
   // HIDE AND SHOW MENU
   
   .menu-button + ul { 
-
     width: 0; 
     padding: 0;
     transition: all .2s ease; 

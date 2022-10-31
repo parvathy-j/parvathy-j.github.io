@@ -18,6 +18,7 @@ grid-template-columns: repeat(2,1fr) ;
 justify-content: center;
 align-items: center;
 padding: 2rem;
+text-align: center;
 
 }
 &__heading{
@@ -27,11 +28,21 @@ padding: 2rem;
 margin-bottom: 0;
 text-transform: uppercase;
 justify-self: center;
+@media only screen and (max-width:$bp-mobile){
+    text-align: center;
+    margin: 0rem;
+    padding: 0rem;
+}
 
 }
 &__paragraph{
     margin-left: 2rem;
     padding: 2rem;
+    @media only screen and (max-width:$bp-mobile){
+        text-align: center;
+        margin-left: 0rem;
+    padding: 0rem;
+    }
 }
 &__detail{
     padding: 2rem;
@@ -40,5 +51,6 @@ a{
     text-decoration: none;
 }
 }
+
 
 }
