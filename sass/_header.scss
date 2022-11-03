@@ -53,6 +53,7 @@ margin-bottom: 0;
 }
 .sticky {
     position: fixed;
+    overflow: hidden;
     
     background-color: $color-primary;
     
@@ -91,12 +92,14 @@ margin-bottom: 0;
     padding-bottom: 2rem;
     margin-bottom: 35px;
     position: absolute;
+    overflow: hidden;
     margin-left: 8rem;
     margin-top: 4rem;
     top: 25%;
     @media only screen and (max-width:$bp-large){
         margin: 8rem ;
         position: absolute;
+        overflow: hidden;
         padding: 5rem;
         float: left;
         

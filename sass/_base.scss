@@ -69,7 +69,7 @@ h1{
 }
 p{
     font-size: 1.5rem;
-    font-weight: 200 !important;
+    font-weight: 200 ;
     color:$font-colour;
     line-height: 1;
 
@@ -87,4 +87,14 @@ h3 {
     margin-block-start: 1em;
     margin-block-end: 1em;
     font-weight: bold;
+}
+.section {
+    padding: 15rem 3rem;
+  
+    transition: transform 1s, opacity 1s;
+  }
+.section--hidden {
+opacity: 0;
+  transform: translateY(8rem);
+  
 }
