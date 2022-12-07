@@ -112,6 +112,11 @@ margin-bottom: 0;
         top: 15%;
  
     }
+    &__icon{
+          fill:rgba(255, 255, 255, 0.87) !important;
+          
+
+    }
   
     
     &__icon,a:visited{
@@ -119,9 +124,11 @@ margin-bottom: 0;
      width: 40px;
     height: 40px;
     font-size: 16px;
-    fill:rgba(255, 255, 255, 0.87) !important;
+    // fill:rgba(255, 255, 255, 0.87) !important;
     padding: 11px;
     color:#fff;
+    border-radius: 1rem;
+    margin-left:1rem;
     
     }
     
@@ -132,7 +139,8 @@ margin-bottom: 0;
     &__icon:hover,svg:hover{
     transition: all .3s;
     background-color: #fff;
-    fill: $color-primary;
+    fill:rgba(8, 8, 8, 0.87) !important;
+
     }
     }
 
