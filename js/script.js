@@ -10,7 +10,7 @@ const closeModal = function (e) {
   modalLogin.classList.remove("expanded");
 };
 document.addEventListener('click', function (e) {
-  e.preventDefault(e);
+  // e.preventDefault(e);
   if (!sitenavigation.contains(e.target)) {
     closeModal();
   }
@@ -67,7 +67,7 @@ document.addEventListener('keydown', function (e) {
   // 2. Determine what element originated the event
   
   document.querySelector('.user-nav__nav-links').addEventListener('click', function (e) {
-    e.preventDefault();
+    // e.preventDefault();
   console.log(e)
     // Matching strategy
     if (e.target.classList.contains('user-nav__nav-link')) {

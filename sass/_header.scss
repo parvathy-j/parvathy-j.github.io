@@ -70,6 +70,7 @@ margin-bottom: 0;
     background-size: cover;
     background-position: top;
     position: relative;
+    overflow: hidden;
     z-index: 100;
     // @media only screen and (max-width:$bp-large){
     //     height: 80vh;
@@ -124,7 +125,7 @@ margin-bottom: 0;
      width: 40px;
     height: 40px;
     font-size: 16px;
-    // fill:rgba(255, 255, 255, 0.87) !important;
+    //  fill:rgba(255, 255, 255, 0.87) !important;
     padding: 11px;
     color:#fff;
     border-radius: 1rem;
@@ -156,8 +157,6 @@ margin-bottom: 0;
 
 /* Navicon Menu */
 .menu-button.navicon {
-
-    
     color: rgba(255, 255, 255, 0);
     position: absolute;
     overflow: hidden;
@@ -185,6 +184,7 @@ margin-bottom: 0;
 
     &.expanded:after {
         content: '\2715';
+        overflow: hidden;
     }
 }
 
@@ -193,7 +193,8 @@ margin-bottom: 0;
 
   
     // HIDE MENU-BUTTON BY DEFAULT
-    .menu-button { display: none; }
+    .menu-button { display: none; 
+    overflow: hidden;}
   
     text-decoration: none;
     margin: .3em 0;
@@ -220,6 +221,7 @@ margin-bottom: 0;
   height: 100%;
   @media screen and (min-width: $bp-small) and (max-width:100000px) {
     display: none; 
+    overflow: hidden;
   }
   
   .menu-button { display: block;
