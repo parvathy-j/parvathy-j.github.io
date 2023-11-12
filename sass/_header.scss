@@ -62,7 +62,7 @@
       rgba($color-secondary, 0.804)
     ),
     url(/img/new_image.jpeg);
-  background-size: cover;
+  background-size: contain; /* Adjusted property for image size */
   background-position: top;
   position: relative;
   overflow: hidden;
