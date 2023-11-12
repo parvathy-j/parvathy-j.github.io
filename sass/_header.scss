@@ -1,34 +1,32 @@
-.header{
-  @media screen and (min-width: 0px) and (max-width:$bp-small) {
-    display: none; 
+.header {
+  @media screen and (min-width: 0px) and (max-width: $bp-small) {
+    display: none;
   }
-  
-background-color: #120c0c08;
-display: flex;
- justify-content: space-between;
- align-items: center;
-height: 9rem;
-width: 100%;
- padding: 0 6rem;
- z-index: 100;
- 
 
-&__logo-icon{
-width:10rem;
-height:10rem;
-margin-top: 2rem;
-margin-bottom: 0;
+  background-color: #120c0c08;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 9rem;
+  width: 100%;
+  padding: 0 6rem;
+  z-index: 100;
 
-
-}
+  &__logo-icon {
+    width: 10rem;
+    height: 10rem;
+    margin-top: 2rem;
+    margin-bottom: 0;
+  }
 }
 
-.user-nav{
-    @media only screen and (max-width:$bp-small){
-        display: none;
-       }
-    
-&__nav-link ,&__nav-link:visited{
+.user-nav {
+  @media only screen and (max-width: $bp-small) {
+    display: none;
+  }
+
+  &__nav-link,
+  &__nav-link:visited {
     font-size: 1.7rem;
     font-weight: 400;
     color: inherit;
@@ -36,60 +34,53 @@ margin-bottom: 0;
     display: block;
     transition: all 0.3s;
     padding: 2rem;
-
-    
-}
-&__nav-links{
+  }
+  &__nav-links {
     display: flex;
     align-items: center;
     list-style: none;
-    
-   
-}
-.nav-item{
+  }
+  .nav-item {
     margin-left: 2rem;
-}
-
+  }
 }
 .sticky {
-    position: fixed;
-    overflow: hidden;
-    
-    background-color: $color-primary;
-    
-  }
-.container{
-  @media screen and (min-width: 0px) and (max-width:$bp-small) {
-  position: unset;    
-  }
-    
-    height: 100vh;
-    background-image: linear-gradient(to right bottom,
-    rgba($color-primary, 0.817),rgba($color-secondary, 0.804)),
-    url(/img/example.jpg);
-    background-size: cover;
-    background-position: top;
-    position: relative;
-    overflow: hidden;
-    z-index: 100;
-    // @media only screen and (max-width:$bp-large){
-    //     height: 80vh;
-    //    }
-    //    @media only screen and (max-width:$bp-medium){
-    //     height: 75vh;
-    //    }
-       
-    
-    
-.list-inline{
-        list-style: none;
-        padding-left: 0;
-        display: flex;
-        margin-left: -5px;
+  position: fixed;
+  overflow: hidden;
 
-        
-    }
-.head{
+  background-color: $color-primary;
+}
+.container {
+  @media screen and (min-width: 0px) and (max-width: $bp-small) {
+    position: unset;
+  }
+
+  height: 100vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary, 0.817),
+      rgba($color-secondary, 0.804)
+    ),
+    url(/img/new_image.jpg);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  overflow: hidden;
+  z-index: 100;
+  // @media only screen and (max-width:$bp-large){
+  //     height: 80vh;
+  //    }
+  //    @media only screen and (max-width:$bp-medium){
+  //     height: 75vh;
+  //    }
+
+  .list-inline {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    margin-left: -5px;
+  }
+  .head {
     padding-bottom: 2rem;
     margin-bottom: 35px;
     position: absolute;
@@ -97,151 +88,144 @@ margin-bottom: 0;
     margin-left: 8rem;
     margin-top: 4rem;
     top: 25%;
-    @media only screen and (max-width:$bp-large){
-        margin: 8rem ;
-        position: absolute;
-        overflow: hidden;
-        padding: 5rem;
-        float: left;
-        
-
-       }
-    @media only screen and (max-width:$bp-medium){
-        top: 20%;
-       }
-       @media only screen and (max-width:$bp-small){
-        top: 15%;
- 
+    @media only screen and (max-width: $bp-large) {
+      margin: 8rem;
+      position: absolute;
+      overflow: hidden;
+      padding: 5rem;
+      float: left;
     }
-    &__icon{
-          fill:rgba(255, 255, 255, 0.87) !important;
-          
-
+    @media only screen and (max-width: $bp-medium) {
+      top: 20%;
     }
-  
-    
-    &__icon,a:visited{
-        cursor: pointer;;
-     width: 40px;
-    height: 40px;
-    font-size: 16px;
-    //  fill:rgba(255, 255, 255, 0.87) !important;
-    padding: 11px;
-    color:#fff;
-    border-radius: 1rem;
-    margin-left:1rem;
-    
-    }
-    
-    
-    &__name{
-        border-bottom: 1px solid rgba(255,255,255,.4);
-    }
-    &__icon:hover,svg:hover{
-    transition: all .3s;
-    background-color: #fff;
-    fill:rgba(8, 8, 8, 0.87) !important;
-
-    }
+    @media only screen and (max-width: $bp-small) {
+      top: 15%;
     }
 
-    &__icon-link,&__icon-link:visited{
-        text-decoration: none;
-       
-    
+    &__icon:hover,
+    a:hover,
+    svg:hover path {
+      transition: all 0.3s;
+      background-color: rgba(255, 255, 255, 0.82);
+      fill: rgba(15, 16, 15, 0.9) !important;
     }
-    
+
+    &__icon,
+    a:visited path {
+      cursor: pointer;
+      width: 40px;
+      height: 40px;
+      font-size: 16px;
+      fill: rgba(255, 255, 255, 0.87);
+      padding: 11px;
+      // color:#fff;
+      border-radius: 1rem;
+      margin-left: 1rem;
+    }
+
+    &__name {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    }
+  }
+
+  &__icon-link,
+  &__icon-link:visited {
+    text-decoration: none;
+  }
 }
-
-
 
 /* Navicon Menu */
 .menu-button.navicon {
-    color: rgba(255, 255, 255, 0);
-    position: absolute;
+  color: rgba(255, 255, 255, 0);
+  position: absolute;
+  overflow: hidden;
+  top: -1rem;
+  right: 0.25em;
+  z-index: 999;
+  background: none;
+  border: none;
+
+  &:hover {
+    cursor: default;
+  }
+
+  &:after {
+    cursor: pointer;
+    color: rgb(250, 249, 249);
+    content: "\2630";
+    font-size: 2em;
+    width: 1em;
+    height: 1em;
+    line-height: 1em;
+    display: block;
+    position: fixed;
     overflow: hidden;
-    top: -1rem;
-    right: .25em;
-    z-index: 999;
-    background: none;
-    border: none;
-  
-    &:hover { cursor: default; }
+  }
 
-    &:after {
-        cursor: pointer;
-        color: rgb(250, 249, 249);
-        content: '\2630';
-        font-size: 2em;
-        width: 1em;
-        height: 1em;
-        line-height: 1em;
-        display: block;
-        position: fixed;
-        overflow: hidden;
-
-    }
-
-    &.expanded:after {
-        content: '\2715';
-        overflow: hidden;
-    }
+  &.expanded:after {
+    content: "\2715";
+    overflow: hidden;
+  }
 }
 
-.site-navigation  {
+.site-navigation {
   z-index: 999;
 
-  
-    // HIDE MENU-BUTTON BY DEFAULT
-    .menu-button { display: none; 
-    overflow: hidden;}
-  
-    text-decoration: none;
-    margin: .3em 0;
-    ul {
-      list-style: none;
-      margin: 0;
-      padding: 1em 1em 0 1em;
-      text-align: right;
-    }
-    li {
-      margin: 0;
-      padding: 0;
-      display: inline-block;
-    }
-    a {
-      display: block;
-      text-decoration: none;
-      padding: 1em;
-      color: #000;
-    }
-}
-
-.drawer-nav .site-navigation  {
-  height: 100%;
-  @media screen and (min-width: $bp-small) and (max-width:100000px) {
-    display: none; 
+  // HIDE MENU-BUTTON BY DEFAULT
+  .menu-button {
+    display: none;
     overflow: hidden;
   }
-  
-  .menu-button { display: block;
+
+  text-decoration: none;
+  margin: 0.3em 0;
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 1em 1em 0 1em;
+    text-align: right;
+  }
+  li {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+  }
+  a {
+    display: block;
+    text-decoration: none;
+    padding: 1em;
+    color: #000;
+  }
+}
+
+.drawer-nav .site-navigation {
+  height: 100%;
+  @media screen and (min-width: $bp-small) and (max-width: 100000px) {
+    display: none;
+    overflow: hidden;
+  }
+
+  .menu-button {
+    display: block;
     z-index: 10000;
   }
-  
-  ul { 
+
+  ul {
     position: fixed;
     overflow: hidden;
     top: 0;
     right: 0;
-    height: 100%; 
+    height: 100%;
     background: $color-primary;
     color: #fff;
     text-align: center;
     z-index: 999;
     li {
       display: block;
-      margin: .3em 0;
-      &:first-child { margin-top: 5.5em; }
+      margin: 0.3em 0;
+      &:first-child {
+        margin-top: 5.5em;
+      }
     }
     a {
       background: rgba(25, 25, 25, 0.74);
@@ -252,25 +236,20 @@ margin-bottom: 0;
       }
     }
   }
-  
+
   // HIDE AND SHOW MENU
-  
-  .menu-button + ul { 
-    width: 0; 
+
+  .menu-button + ul {
+    width: 0;
     padding: 0;
-    transition: all .2s ease; 
+    transition: all 0.2s ease;
   }
-  .menu-button.expanded + ul { 
-    width: 20em; 
-    padding: 0 .5em;
+  .menu-button.expanded + ul {
+    width: 20em;
+    padding: 0 0.5em;
   }
-  
+
   .menu-button.navicon.expanded:after {
     color: #fff;
-  } 
-  
+  }
 }
-
-
-
-
