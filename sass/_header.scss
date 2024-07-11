@@ -51,27 +51,29 @@
   background-color: $color-primary;
 }
 .container {
-  @media screen and (min-width: 0px) and (max-width: $bp-small) {
-    position: unset;
-  }
-
-  height: 100vh;
+  height: 100vh; /* Full viewport height */
   background-image: linear-gradient(
       to right bottom,
-      rgba($color-primary, 0.817),
-      rgba($color-secondary, 0.804)
+      rgba(14, 19, 24, 0.573),
+      rgba(34, 46, 43, 0.858)
     ),
-    url(/img/image.jpeg);
-  background-position: top;
-  position: relative;
-  overflow: hidden;
-  z-index: 100;
-  // @media only screen and (max-width:$bp-large){
-  //     height: 80vh;
-  //    }
-  //    @media only screen and (max-width:$bp-medium){
-  //     height: 75vh;
-  //    }
+    url("/img/image.jpeg"); /* Path to your image */
+  background-size: cover; /* Cover the entire container */
+  background-position: center; /* Center the background image */
+  position: relative; /* Relative positioning */
+  overflow: hidden; /* Hide overflow content */
+  z-index: 100; /* Ensure it's above other elements */
+
+  /* Adjust height for different screen sizes if needed */
+  /* Example for smaller screens */
+  @media only screen and (max-width: 768px) {
+    height: 80vh;
+  }
+
+  /* Example for even smaller screens */
+  @media only screen and (max-width: 576px) {
+    height: 75vh;
+  }
 
   .list-inline {
     list-style: none;
