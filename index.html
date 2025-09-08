@@ -1,336 +1,860 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-        <link href="http://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet" type="text/css">
-        <script defer src="js/script.js"></script>
-        <!--<link rel="stylesheet" href="css/icon-font.css">-->
+    <title>Parvathy Jothi · Portfolio</title>
+    <meta
+      name="description"
+      content="Parvathy Jothi — Master of IT (RMIT) · Software development & cybersecurity. Projects, skills, experience, and contact."
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="img/logo.png" type="image/png" />
 
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="shortcut icon" type="image/png" href="img/logo.png ">
-        <!-- <link rel="shortcut icon" href="img/J.png"> -->
+    <style>
+      :root {
+        --bg: #0b1020;
+        --bg-soft: #0f1530;
+        --card: #121a39;
+        --text: #e8ecff;
+        --muted: #9aa4c7;
+        --brand: #7aa2ff;
+        --brand-2: #3dd68c;
+        --ring: rgba(122, 162, 255, 0.35);
+        --shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+        --radius: 18px;
+        --gutter: clamp(20px, 5vw, 64px);
+        --maxw: 1200px;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        margin: 0;
+        min-height: 100%;
+      }
+      body {
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI,
+          Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+        color: var(--text);
+        background: linear-gradient(180deg, var(--bg), #060912 65%);
+        line-height: 1.6;
+      }
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+      img {
+        max-width: 100%;
+        display: block;
+      }
 
-        
-        <title>Parvathy Jothi</title>
-        <body>
-    <div class="container" id="#home">
-        <header class="header">
-            
-            <div class="nav">
-            <div class="header__logo">
-                <a class="user-nav__nav-link" href="#"> <img src="img/favicon.png" alt="logo for website" class="header__logo-icon"></a>
-           
-            </div>
-            </div>
-        <div class="user-nav">
-            <ul class="user-nav__nav-links">
-                <li class="nav__item">
-                  <a class="user-nav__nav-link" href="#about">About</a>
-                </li>
-                <li class="nav__item">
-                  <a class="user-nav__nav-link" href="#skills">Skills</a>
-                </li>
-                <li class="nav__item">
-                  <a class="user-nav__nav-link" href="#experience">Experience</a>
-                </li>
-                <li class="nav__item">
-                  <a class="user-nav__nav-link" href="#contact"
-                    >Contact</a
-                  >
-                </li>
-              </ul>
-            </nav>
-            </div>
-            
-        </header>
-        
-        
-<!-- hih -->
-        <div class="head" >
-            <div class="head__name">
-            <h1>Parvathy <br> Jothi</h1>
-            <p>I develop things for the web </p>
-        </div>
-            <ul class="list-inline">
-              
-                <li> <svg class="head__icon">
-                <a target="_blank" href="https://www.linkedin.com/in/parvathy-j-5838651a9/" class="head__icon-link">
-                <use xlink:href="img/sprite.svg#icon-linkedin">
-                </use>
-               </svg></li> </a>
-                <li> <svg class="head__icon">
-                    <a target="_blank" href="https://github.com/parvathy-j" class="head__icon-link">
-                    <use xlink:href="img/sprite.svg#icon-github">
-                    </use>
-                    </a></svg></li>
-                <li> <svg class="head__icon">
-                    <a target="_blank" href="https://twitter.com/__parvathy___" class="head__icon-link">
-                    <use xlink:href="img/sprite.svg#icon-twitter">
-                    </use>
-                    </a></svg></li>
-                    <li> 
-                      <svg class="head__icon">
-                        <a target="_blank" href="https://www.instagram.com/parva_thy_" class="head__icon-link">
-                        <use xlink:href="img/sprite.svg#icon-instagram">
-                        </use>
-                        </a></svg></li>
-                        <li> <svg class="head__icon">
-                            <a target="_blank"  href="https://www.facebook.com/parvathyjothi5/" class="head__icon-link">
-                            <use xlink:href="img/sprite.svg#icon-facebook">
-                            </use>
-                           </a> </svg></li>
-                            
-            </ul>
-        
-        </div>
-        </div>
-        <header class="drawer-nav" id="drawer-nav">
-          <nav class="site-navigation">
-            <button class="menu-button navicon">Menu</button> 
-              <ul class="nav">
-                <li class="nav__item">
-                  <a class="user-nav__nav-link" href="#about">About</a>
-                </li>
-                <li class="nav__item">
-                  <a class="user-nav__nav-link" href="#skills">Skills</a>
-                </li>
-                <li class="nav__item">
-                  <a class="user-nav__nav-link" href="#experience">Experience</a>
-                </li>
-                <li class="nav__item">
-                  <a class="user-nav__nav-link" href="#contact"
-                    >Contact</a
-                  >
-                </li>
-                 
-              </ul>
-          </nav>
-  </header>
-  
-        <div class="row">
-        <div class="about section" id="about">
-            
-                <h2 class="about__heading">About me
-                
-                </h2>
-                <p class="about__paragraph">
-                  Hello! I'm Parvathy Jothi, a passionate Master of Information Technology student with a keen interest in software development and cybersecurity. I am currently preparing to transition from academia to the IT workforce, eager to apply my knowledge and skills in real-world settings.
-                  <br>During my academic journey, I have honed my expertise in programming languages such as Java and Python, database management, and cloud computing. I enjoy tackling complex problems and creating efficient solutions through innovative technologies.
-                  <br>Outside of academics, I actively participate in tech communities, where I collaborate with peers on projects and stay updated with industry trends. I am committed to continuous learning and look forward to contributing positively to the ever-evolving field of information technology.</p>
-                  <h2 class="about__heading"style="font-weight=100">Alma mater</h2>
-                   <ul class="education">
-                    <li class="about__list">
-                      <div class="education">Master of Information Technology</div>
-                      <p class="about__paragraph">
-                      RMIT University<br>
-                      Melbourne,Australia<br>
-                      2023-2024<br>
-                      </p>
-                      </li>
-                    <li class="about__list">
-                        <div class="education">BACHELOR OF COMMERCE (Computer Application)</div>
-                        <p class="about__paragraph">
-                        St. Alberts College(Autonomous), Ernakulam<br>
-                        Affiliated to Mahatma Gandhi University,Kottayam<br>
-                        Kerala, India<br>
-                        2019-2022<br>
-                        
-                        </p>
-                        </li>
-                        
-                        <li class="about__list">
-                            <div class="education">HIGH SCHOOL</div>
-                            <p class="about__paragraph">
-                                Rajagiri Higher Secondary School
-                                , Kalamaserry<br>
-                                 Kerala, India<br>
-                            2017-2019<br>
-                            
-                            </p>
-                            </li>
-                        <!-- <div class="education"></div> <br>
-                        Rajagiri Higher Secondary School
-                       , Kalamaserry<br>
-                        Kerala, India<br>
-                        Percentage:90.91%</p> -->
-                    
-                </ul>
+      /* layout */
+      .wrap {
+        max-width: 950px; /* or whatever you want */
+        margin-inline: auto; /* centers from BOTH sides */
+        padding-inline: clamp(20px, 5vw, 48px); /* equal gutters */
+        width: 100%;
+        box-sizing: border-box;
+      }
+      .hero .wrap {
+        padding-inline: clamp(40px, 8vw, 100px);
+      }
+      header.nav {
+        position: sticky;
+        top: 0;
+        z-index: 40;
+        backdrop-filter: saturate(140%) blur(10px);
+        background: rgba(6, 9, 18, 0.55);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+      }
+      .nav__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 14px 0;
+      }
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-weight: 700;
+        letter-spacing: 0.3px;
+      }
+      .logo img {
+        width: 32px;
+        height: 32px;
+      }
+      .nav__links {
+        display: flex;
+        gap: 22px;
+      }
+      .nav__links a {
+        color: var(--muted);
+      }
+      .nav__links a:hover,
+      .nav__links a:focus {
+        color: var(--text);
+      }
+      .menu {
+        display: none;
+      }
+      @media (max-width: 760px) {
+        .nav__links {
+          display: none;
+        }
+        .menu {
+          display: inline-flex;
+          align-items: center;
+          gap: 8px;
+          color: var(--muted);
+        }
+      }
 
-            </div>
+      /* hero */
+      .hero {
+        padding: 72px 0 36px;
+      }
+      .hero__grid {
+        display: grid;
+        grid-template-columns: 1.3fr 0.7fr;
+        gap: 28px;
+        align-items: center;
+      }
+      .h-eyebrow {
+        display: inline-block;
+        padding: 6px 10px;
+        font-size: 12px;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        color: #c6d3ff;
+        border: 1px solid rgba(122, 162, 255, 0.35);
+        border-radius: 999px;
+        background: rgba(122, 162, 255, 0.08);
+      }
+      /* Avatar in hero */
+      .avatar {
+        width: 120px;
+        height: 120px; /* 96px in your mobile tweak is fine too */
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: center;
+        border: 2px solid rgba(255, 255, 255, 0.18);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+      }
+      @media (max-width: 920px) {
+        .avatar {
+          width: 96px;
+          height: 96px;
+        }
+      }
 
+      h1 {
+        font-size: 56px;
+        line-height: 1.05;
+        margin: 14px 0 10px;
+        letter-spacing: 0.2px;
+      }
+      .h-sub {
+        font-size: 18px;
+        color: var(--muted);
+        margin-bottom: 24px;
+      }
+      .cta {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+      }
+      .btn {
+        padding: 12px 18px;
+        border-radius: 12px;
+        font-weight: 600;
+        border: 1px solid transparent;
+        transition: 0.2s ease;
+        box-shadow: var(--shadow);
+      }
+      .btn--brand {
+        background: linear-gradient(135deg, var(--brand), #86b5ff);
+        color: #0a1020;
+      }
+      .btn--ghost {
+        background: rgba(255, 255, 255, 0.03);
+        border-color: rgba(255, 255, 255, 0.08);
+        color: var(--text);
+      }
+      .btn:hover {
+        transform: translateY(-1px);
+      }
+      .hero__card {
+        background: linear-gradient(160deg, var(--card), #0e1633 60%);
+        border: 1px solid rgba(255, 255, 255, 0.06);
+        border-radius: var(--radius);
+        padding: 24px;
+      }
 
-        </div>
-        
-            
-        <div class="skills section" id="skills">
-            
-            <h2 class="skills__heading">Technologies i am familiar with </h2>
-               <div class="skills__cards">
-                
+      .meta {
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+        margin-top: 14px;
+      }
+      .chip {
+        background: rgba(255, 255, 255, 0.06);
+        padding: 6px 10px;
+        border-radius: 999px;
+        font-size: 12px;
+        color: #c8d1f0;
+      }
 
-                <div class="skills__card card_part card_part-1">
+      @media (max-width: 920px) {
+        .hero__grid {
+          grid-template-columns: 1fr;
+        }
+        h1 {
+          font-size: 44px;
+        }
+      }
 
-                <svg class="skills__icon">
-                    <use xlink:href="img/sprite.svg#icon-embed">
-                        </use></svg>
-                <h3 class="skill__cards-header">HTML5/CSS3/SASS</h3>
-                <!-- <div class="circle per-85">
-                    <div class="inner">85%</div>
-                  </div> -->
-               </div>
-            
-               <div class="skills__card">
-                <svg class="skills__icon">
-                    <use xlink:href="img/sprite.svg#icon-javascript">
-                        </use></svg>
-                <h3 class="skill__cards-header">JavaScript</h3>
-                <!-- <div class="circle per-75">
-                    <div class="inner">75%</div>
-                  </div> -->
-               </div>
-              
-              
-               <div class="skills__card ">
-                <svg class="skills__icon">
-                    <use xlink:href="img/sprite.svg#icon-mysql">
-                        </use></svg>
-                <h3 class="skill__cards-header">MySQL</h3>
-                
-                <!-- <div class="circle per-75">
-                    <div class="inner">75%</div>
-                  </div> -->
-               </div><div class="skills__card card-1">
-                <svg class="skills__icon">
-                    <use xlink:href="img/sprite.svg#icon-java">
-                        </use></svg>
-                <h3 class="skill__cards-header">Java</h3>
-                
-                <!-- <div class="circle per-25">
-                    <div class="inner">40%</div>
-                  </div> -->
-               </div><div class="skills__card card-2">
-                <svg class="skills__icon">
-                    <use xlink:href="img/sprite.svg#icon-react">
-                        </use></svg>
-                <h3 class="skill__cards-header">ReactJS</h3>
-                
-                <!-- <div class="circle per-25">
-                    <div class="inner">25%</div>
-                  </div> -->
-               </div><div class="skills__card card-2">
-                <svg class="skills__icon">
-                    <use xlink:href="img/sprite.svg#icon-browser">
-                        </use></svg>
-                <h3 class="skill__cards-header">C#</h3>
-                
-                <!-- <div class="circle per-25">
-                    <div class="inner">25%</div>
-                  </div> -->
-               </div>
-            </div>
-            
-            </div>
-            
-           
-            <div class="experience section" id="experience">
-                <div class="experience-left">
-                <h2 class="experience__heading">A bit of experience</h2>
-                <p class="experience__paragraph">Just a heads up that I'm a beginner in the field and
-                     I'm learning as i go </p>
-                    </div>
-                     <div class="timeline"> 
-                        <div class="timeline__event  animated fadeInUp delay-3s timeline__event--type1">
-                          <div class="timeline__event__icon ">
-    
-                      
-                          </div>
-                          <div class="timeline__event__date">
-                            23-08-2022 <br>Virtual Intern
-                          </div>
-                          <div class="timeline__event__content ">
-                            <div class="timeline__event__title">
-                              JPMorgan Chase & Co.
-                            </div>
-                            <div class="timeline__event__description">
-                              <p>Software Engineering virtual experience, completed practical modules in Interface with a stock price data feed and 
-                                used JPMC frameworks and tools to display data visually for traders</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="timeline__event animated fadeInUp delay-2s timeline__event--type2">
-                          <div class="timeline__event__icon">
-                          </div>
-                          <div class="timeline__event__date">
-                            25-10-2021 to 20-01-2022 
-                            <br>Virtual Internship program
-                          </div>
-                          <div class="timeline__event__content">
-                            <div class="timeline__event__title">
-                                Microsoft, GitHub,EY and other partners
-                            </div>
-                            <div class="timeline__event__description">
-                              <p>Used Azure Microsoft Technologies to build and 
-                                deploy a web app titled “LearnSmart".It was an individual project and 
-                        i came up with the concept in the field of education technology.</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="timeline__event  animated fadeInUp delay-3s timeline__event--type3">
-                          <div class="timeline__event__icon">
-    
-                      
-                          </div>
-                          <div class="timeline__event__date">
-                            15-04-2020 to 23-04-2020
-                            <br> Trainee
-                          </div>
-                          <div class="timeline__event__content">
-                            <div class="timeline__event__title">
-                                Kerala Electrical and Allied Engineering 
-                                Services Ltd Kochi, Kerala
-                            </div>
-                            <div class="timeline__event__description">
-                              <p>Designed and build an Employee 
-                                Attendance database with data 
-                                integration from their pre-existing excel 
-                                sheet using MySQL</p>
-                            </div>
-                      
-                          </div>
-                        </div>
-                      </div>   
-                    </div>         
-        </div>
-        <!-- <a href="javascript:void(0);" class="js-back-to-top back-to-top">Top</a> -->
-        <footer class="contact section" id="contact">
-          <div class="contact-left">
-            <h2 class="contact__heading">Get in touch!</h2>
-            <p class="contact__paragraph"></p>
+      /* sections */
+      section {
+        padding: 60px 0;
+      }
+      .section__title {
+        font-size: 28px;
+        margin: 0 0 18px;
+      }
+      .section__lede {
+        color: var(--muted);
+        max-width: 760px;
+      }
+
+      /* skills */
+      .grid {
+        display: grid;
+        gap: 16px;
+      }
+      .grid--skills {
+        grid-template-columns: repeat(6, 1fr);
+      }
+      @media (max-width: 1000px) {
+        .grid--skills {
+          grid-template-columns: repeat(4, 1fr);
+        }
+      }
+      @media (max-width: 700px) {
+        .grid--skills {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      .skill {
+        background: linear-gradient(
+          180deg,
+          rgba(122, 162, 255, 0.08),
+          rgba(61, 214, 140, 0.08)
+        );
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 14px;
+        padding: 16px;
+        text-align: center;
+      }
+      .skill b {
+        display: block;
+        font-size: 14px;
+      }
+      .skill small {
+        color: var(--muted);
+      }
+
+      /* projects */
+      .grid--cards {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      @media (max-width: 1000px) {
+        .grid--cards {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      @media (max-width: 720px) {
+        .grid--cards {
+          grid-template-columns: 1fr;
+        }
+      }
+      .card {
+        background: linear-gradient(160deg, var(--card), #0e1633 60%);
+        border-radius: var(--radius);
+        border: 1px solid rgba(255, 255, 255, 0.06);
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+      }
+      .card__media {
+        aspect-ratio: 16/9;
+        background: radial-gradient(
+          70% 60% at 50% 40%,
+          rgba(122, 162, 255, 0.28),
+          rgba(61, 214, 140, 0)
+        );
+        border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+      }
+      .card__body {
+        padding: 18px;
+      }
+      .card__title {
+        font-weight: 700;
+        margin: 4px 0;
+      }
+      .card__tags {
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+        margin-top: 6px;
+      }
+      .tag {
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        border-radius: 999px;
+        padding: 4px 8px;
+        font-size: 12px;
+        color: #c9d3ff;
+      }
+      .card__actions {
+        margin-top: auto;
+        padding: 0 18px 16px;
+      }
+      .link {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 10px 12px;
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+      .link:hover {
+        background: rgba(255, 255, 255, 0.06);
+      }
+
+      /* experience */
+      .timeline {
+        position: relative;
+        padding-left: 24px;
+      }
+      .timeline::before {
+        content: "";
+        position: absolute;
+        left: 8px;
+        top: 0;
+        bottom: 0;
+        width: 2px;
+        background: linear-gradient(var(--brand), transparent);
+      }
+      .t-item {
+        position: relative;
+        margin: 0 0 22px;
+        padding-left: 18px;
+      }
+      .t-item::before {
+        content: "";
+        position: absolute;
+        left: -2px;
+        top: 0.35rem;
+        width: 10px;
+        height: 10px;
+        background: var(--brand);
+        border-radius: 50%;
+        box-shadow: 0 0 0 4px var(--ring);
+      }
+      .t-role {
+        font-weight: 700;
+      }
+      .t-meta {
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      /* contact */
+      .contact {
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr;
+        gap: 26px;
+        align-items: start;
+      }
+      @media (max-width: 920px) {
+        .contact {
+          grid-template-columns: 1fr;
+        }
+      }
+      .contact .card {
+        padding: 22px;
+      }
+      .list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      .list li {
+        margin: 10px 0;
+      }
+      .muted {
+        color: var(--muted);
+      }
+
+      /* footer */
+      footer {
+        padding: 30px 0;
+        color: var(--muted);
+        border-top: 1px solid rgba(255, 255, 255, 0.06);
+      }
+
+      /* utilities */
+      .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        border: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- NAV -->
+    <header class="nav">
+      <div class="wrap nav__inner">
+        <a href="#home" class="logo" aria-label="Go to homepage">
+          <img src="img/favicon.png" alt="PJ logo" />
+          <span>Parvathy Jothi</span>
+        </a>
+        <nav aria-label="Primary" class="nav__links" id="navLinks">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
+          <a href="#education">Education</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <button
+          class="menu"
+          aria-controls="navLinks"
+          aria-expanded="false"
+          id="menuBtn"
+        >
+          ☰ Menu
+        </button>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <main id="home" class="wrap hero">
+      <div class="hero__grid">
+        <div>
+          <picture>
+            <source
+              srcset="img/me-192.webp 1x, img/me-384.webp 2x"
+              type="image/webp"
+            />
+            <img
+              class="avatar"
+              src="img/me-192.jpg"
+              srcset="img/me-192.jpg 1x, img/me-384.jpg 2x"
+              sizes="(max-width: 920px) 96px, 120px"
+              width="120"
+              height="120"
+              alt="Parvathy Jothi headshot"
+            />
+          </picture>
+          <span class="h-eyebrow"
+            >Software development · Application Support</span
+          >
+
+          <h1>Hi, I'm Parvathy — I build for the web.</h1>
+          <p class="h-sub">
+            Master of Information Technology (RMIT, 2024). I enjoy solving
+            problems with clean code, data, and a security-first mindset.
+          </p>
+          <div class="cta">
+            <a class="btn btn--brand" href="#projects">View projects</a>
+            <a class="btn btn--ghost" href="mailto:parvathyjothi121@gmail.com"
+              >Email me</a
+            >
           </div>
-          <div class="contact-right">
-            <div class="contact__detail">
-              <h3>Location</h3>
-              <p>Melbourne,Australia</p>
+          <div class="meta">
+            <span class="chip">Melbourne, Australia</span>
+            <span class="chip">Open to roles: SWE / App Support / SecOps</span>
+          </div>
+        </div>
+        <aside aria-label="Quick profile" class="hero__card">
+          <h3 style="margin: 0 0 8px">At a glance</h3>
+          <ul class="list muted">
+            <li>• JavaScript / TypeScript, Java, Python</li>
+            <li>• React, Node, SQL (MySQL), REST</li>
+            <li>• Cloud: Azure (web apps), basics of AWS</li>
+            <li>• Interests: security, data, UI</li>
+          </ul>
+          <div class="cta" style="margin-top: 12px">
+            <a
+              class="link"
+              href="https://github.com/parvathy-j"
+              target="_blank"
+              rel="noreferrer"
+              >GitHub ↗</a
+            >
+            <a
+              class="link"
+              href="https://www.linkedin.com/in/parvathy-j-5838651a9/"
+              target="_blank"
+              rel="noreferrer"
+              >LinkedIn ↗</a
+            >
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="wrap">
+        <h2 class="section__title">About</h2>
+        <p class="section__lede">
+          I’m a recent Master of Information Technology graduate with hands-on
+          projects across web apps and data-driven features. I value
+          accessibility, performance, and secure-by-default design. Outside uni,
+          I contribute to community projects and keep learning through
+          build–measure–learn loops.
+        </p>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <div class="wrap">
+        <h2 class="section__title">Skills</h2>
+        <div class="grid grid--skills" aria-label="Skill badges">
+          <div class="skill"><b>HTML5</b><small>Semantic, a11y</small></div>
+          <div class="skill">
+            <b>CSS3 / SASS</b><small>Responsive, modern</small>
+          </div>
+          <div class="skill"><b>JavaScript</b><small>ES6+, DOM</small></div>
+          <div class="skill"><b>React</b><small>Hooks, SPA</small></div>
+          <div class="skill"><b>Java</b><small>OOP, basics</small></div>
+          <div class="skill"><b>Python</b><small>Scripts, data</small></div>
+          <div class="skill"><b>MySQL</b><small>Schema, queries</small></div>
+          <div class="skill"><b>Azure</b><small>Web apps</small></div>
+          <div class="skill"><b>C#</b><small>Foundations</small></div>
+          <div class="skill"><b>Git & GitHub</b><small>PRs, issues</small></div>
+          <div class="skill"><b>Security</b><small>OWASP basics</small></div>
+          <div class="skill"><b>Testing</b><small>Jest/Selenium</small></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <div class="wrap">
+        <h2 class="section__title">Projects</h2>
+        <p class="section__lede">
+          A few examples — happy to walk through code, trade-offs, and what I'd
+          improve next.
+        </p>
+        <div class="grid grid--cards">
+          <!-- Card 1 -->
+          <article class="card" aria-labelledby="p1-title">
+            <div
+              class="card__media"
+              role="img"
+              aria-label="Dashboard UI abstract"
+            >
+              <img
+                src="img/learnsmart.png"
+                alt="LearnSmart project screenshot"
+                style="width: 100%; height: auto"
+              />
             </div>
-              <div class="contact__detail">
-                <h3>Phone</h3>
-                <a href="tel:7306998524"><p>0478646815</p></a>
+            <div class="card__body">
+              <h3 id="p1-title" class="card__title">
+                LearnSmart — Edu web app
+              </h3>
+              <p class="muted">
+                Azure-hosted prototype built during Microsoft/GitHub program.
+                Auth, course catalogue, and progress tracker.
+              </p>
+              <div class="card__tags">
+                <span class="tag">React</span><span class="tag">Node</span
+                ><span class="tag">Azure</span>
               </div>
-                  <div class="contact__detail">
-                  <h3>E-mail</h3>
-                  <a href="mailto:parvathyjothi121@gmail.com"><p >parvathyjothi121@gmail.com</p></a>
-                  </div>
-                  <div class="contact__detail">
-                    <h3>web</h3>
-                    <a href="https://parvathy-j.github.io/"><p>parvathy-j.github.io</p></a>
-                  </div>
-                </footer>
+            </div>
+            <div class="card__actions">
+              <a
+                class="link"
+                href="https://github.com/parvathy-j"
+                target="_blank"
+                rel="noreferrer"
+                >Code on GitHub ↗</a
+              >
+            </div>
+          </article>
 
+          <!-- Card 2 -->
+          <article class="card" aria-labelledby="p4-title">
+            <div class="card__media" role="img" aria-label="Music app">
+              <img
+                src="img/simplemusicapp.png"
+                alt="Simple music app"
+                style="width: 100%; height: auto"
+              />
+            </div>
+            <div class="card__body">
+              <h3 id="p4-title" class="card__title">Simple Music App</h3>
+              <p class="muted">
+                The Simple Music App is designed to manage artist information
+                and music-related data. It allows adding new artists and
+                updating artist info while ensuring data integrity.
+              </p>
+              <div class="card__tags">
+                <span class="tag">Java</span><span class="tag">OOP</span
+                ><span class="tag">CLI App</span>
+              </div>
+            </div>
+            <div class="card__actions">
+              <a
+                class="link"
+                href="https://github.com/parvathy-j/Simple-Music-App"
+                target="_blank"
+                rel="noreferrer"
+                >Code on GitHub ↗</a
+              >
+            </div>
+          </article>
+          <!-- Card 3 -->
+          <article class="card" aria-labelledby="p5-title">
+            <img
+              src="img/eatnsplit.png"
+              alt="eatNSplit app UI thumbnail"
+              class="card__media"
+            />
+            <div class="card__body">
+              <h3 id="p5-title" class="card__title">
+                eatNSplit — Bill splitter
+              </h3>
+              <p class="muted">
+                A small React app to split bills with friends. Add friends,
+                select who pays, and update running balances with simple state
+                logic.
+              </p>
+              <div class="card__tags">
+                <span class="tag">React</span><span class="tag">useState</span
+                ><span class="tag">SPA</span>
+              </div>
+            </div>
+            <div class="card__actions">
+              <a class="link" href="#" target="_blank" rel="noreferrer"
+                >Repo / Demo ↗</a
+              >
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
 
+    <!-- EXPERIENCE -->
+    <section id="experience">
+      <div class="wrap">
+        <h2 class="section__title">Experience</h2>
+        <div class="timeline" aria-label="Professional experience">
+          <div class="t-item">
+            <div class="t-role">Software Developer — ABC Academy of Music</div>
+            <div class="t-meta">Jul 2024 – Dec 2024 · Melbourne</div>
+            <ul class="list">
+              <li>
+                Collaborated with a cross-functional team to design, develop,
+                and maintain the Hinna CRM system using Spring Boot for backend
+                services.
+              </li>
+              <li>
+                Developed responsive frontend interfaces from Figma designs,
+                ensuring brand consistency, accessibility, and optimal user
+                experience.
+              </li>
+              <li>
+                Implemented RESTful APIs and managed microservices to enhance
+                platform functionality and performance.
+              </li>
+              <li>
+                Utilized Java to ensure robust backend solutions, integrated
+                with frontend applications using HTMX.
+              </li>
+            </ul>
+          </div>
+          <div class="t-item">
+            <div class="t-role">
+              Software Developer Intern — Future Ready Talent (GitHub, EY)
+            </div>
+            <div class="t-meta">Oct 2021 – Jan 2022 · India</div>
+            <ul class="list">
+              <li>
+                Designed and deployed an edtech application to support student
+                learning using Microsoft Azure services.
+              </li>
+              <li>
+                Configured CI/CD pipelines with Azure DevOps, managed App
+                Services and Azure SQL.
+              </li>
+              <li>
+                Built user interfaces for course access, scheduling, and
+                resource libraries using JavaScript and HTML/CSS.
+              </li>
+              <li>
+                Gained exposure to Azure Blob Storage, monitoring, and scalable
+                deployment strategies.
+              </li>
+            </ul>
+          </div>
 
-        
-        </body>
+          <div class="t-item">
+            <div class="t-role">
+              Trainee — Kerala Electrical & Allied Engineering Services
+            </div>
+            <div class="t-meta">Apr 2020</div>
+            <div>
+              Created an employee attendance database integrating legacy Excel
+              sheets using MySQL.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education">
+      <div class="wrap">
+        <h2 class="section__title">Education</h2>
+        <ul class="list">
+          <li>
+            <b>Master of Information Technology</b> — RMIT University
+            (2023–2024), Melbourne, Australia
+          </li>
+          <li>
+            <b>B.Com (Computer Application)</b> — St Albert’s College
+            (Autonomous), Kerala, India (2019–2022)
+          </li>
+          <li>
+            <b>High School</b> — Rajagiri HSS, Kalamassery, Kerala, India
+            (2017–2019)
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="wrap">
+        <h2 class="section__title">Contact</h2>
+        <div class="contact">
+          <div class="card">
+            <p class="muted">
+              I’m open to graduate and junior roles in software engineering,
+              application support, or security-focused roles. If my projects
+              resonate, let’s talk!
+            </p>
+            <div class="cta" style="margin-top: 8px">
+              <a class="btn btn--brand" href="mailto:parvathyjothi121@gmail.com"
+                >Email</a
+              >
+              <a class="btn btn--ghost" href="tel:+61478646815">Call</a>
+            </div>
+          </div>
+          <aside class="card">
+            <ul class="list">
+              <li><b>Location:</b> Melbourne, Australia</li>
+              <li><b>Phone:</b> <a href="tel:+61478646815">0478 646 815</a></li>
+              <li>
+                <b>Email:</b>
+                <a href="mailto:parvathyjothi121@gmail.com"
+                  >parvathyjothi121@gmail.com</a
+                >
+              </li>
+              <li>
+                <b>Web:</b>
+                <a
+                  href="https://parvathy-j.github.io/"
+                  target="_blank"
+                  rel="noreferrer"
+                  >parvathy-j.github.io</a
+                >
+              </li>
+              <li>
+                <b>Social:</b>
+                <a
+                  href="https://github.com/parvathy-j"
+                  target="_blank"
+                  rel="noreferrer"
+                  >GitHub</a
+                >
+                ·
+                <a
+                  href="https://www.linkedin.com/in/parvathy-j-5838651a9/"
+                  target="_blank"
+                  rel="noreferrer"
+                  >LinkedIn</a
+                >
+                ·
+                <a
+                  href="https://twitter.com/__parvathy___"
+                  target="_blank"
+                  rel="noreferrer"
+                  >Twitter</a
+                >
+                ·
+                <a
+                  href="https://www.instagram.com/parva_thy_/"
+                  target="_blank"
+                  rel="noreferrer"
+                  >Instagram</a
+                >
+              </li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="wrap">
+        © <span id="year"></span> Parvathy Jothi · Built with care
+      </div>
+    </footer>
+
+    <script>
+      // mobile menu toggle
+      const menuBtn = document.getElementById("menuBtn");
+      const navLinks = document.getElementById("navLinks");
+      menuBtn?.addEventListener("click", () => {
+        const isOpen = navLinks.style.display === "flex";
+        navLinks.style.display = isOpen ? "none" : "flex";
+        navLinks.style.flexDirection = "column";
+        navLinks.style.gap = "14px";
+        menuBtn.setAttribute("aria-expanded", String(!isOpen));
+      });
+      // year
+      document.getElementById("year").textContent = new Date().getFullYear();
+      // smooth scroll focus
+      document.querySelectorAll('a[href^="#"]').forEach((a) => {
+        a.addEventListener("click", (e) => {
+          const id = a.getAttribute("href");
+          const el = document.querySelector(id);
+          if (el) {
+            e.preventDefault();
+            el.scrollIntoView({ behavior: "smooth" });
+          }
+        });
+      });
+    </script>
+  </body>
 </html>
